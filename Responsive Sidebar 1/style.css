@@ -1,0 +1,87 @@
+/* Importing google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #d2d2d2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%; width: 260px;
+    background: #161a2d;
+    padding: 25px 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.sidebar-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 23px;
+}
+
+.sidebar-links {
+    list-style: none;
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar-links h4 {
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+    white-space: nowrap;
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    color: #dbd4d4e3;
+    font-weight: 500;
+    padding: 15px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.sidebar-links li a:hover {
+    background: #ffffff2d;
+    color: #fff;
+}
+
+.user-account {
+    margin-top: auto;
+    padding: 12px 10px;
+    margin-left: -10px;
+}
+
+.user-account .user-profile {
+    color: #e5dede;
+}
+
+.user-account .user-profile img {
+    width: 42px; height: 42px;
+    border-radius: 50%;
+}

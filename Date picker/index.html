@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" min="08/20/2024">
+        <p>Formatted Date: <span id="formatted-date"></span></p>
+    </form>
+
+    <script>
+        const dateInput = document.getElementById('date');
+        const formattedDateDisplay = document.getElementById('formatted-date');
+
+        dateInput.addEventListener('change', function() {
+            const dateValue = new Date(this.value);
+            const formattedDate = `${('0' + (dateValue.getMonth() + 1)).slice(-2)}/${('0' + dateValue.getDate()).slice(-2)}/${dateValue.getFullYear()}`;
+            formattedDateDisplay.textContent = formattedDate;
+        });
+    </script>
+</body>
+</html>

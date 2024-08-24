@@ -6,7 +6,6 @@
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
-    scrollbar-width: 0;
 }
 
 .slider {
@@ -17,7 +16,7 @@
     scroll-behavior: smooth;    /* creates a smooth animation */
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
-    scrollbar-width: 0;
+    scrollbar-width: none;
 }
 
 .slider img {

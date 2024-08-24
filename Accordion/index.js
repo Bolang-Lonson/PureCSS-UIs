@@ -6,7 +6,6 @@ accords.forEach(accord => {
         accords.forEach(otherAccord => {
             if (otherAccord !== accord){
                 otherAccord.classList.remove('open')
-                
             }
         });
         accord.classList.toggle('open');
